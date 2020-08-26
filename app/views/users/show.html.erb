@@ -1,21 +1,21 @@
 <h1>Userlist</h1>
 
-<p>Anzahl Benutzer: <%=User.count%></p>
+<p>Anzahl Benutzer: <%= User.count %></p>
 
-<p>Name des 1. Benutzers in der Datenbank: <%=User.first.name%></p>
+<p>Name des 1. Benutzers in der Datenbank: <%= User.first.name %></p>
 
-<%u=User.first%>
-<p>Email des 1. Benutzers in der Datenbank: <%=u.email%></p>
+<% u = User.first %>
+<p>Email des 1. Benutzers in der Datenbank: <%= u.email %></p>
 </br>
 <ol>
   <% User.all.each do |u| %>
     <li>
 
-      <%=u.name%>
+      <%= u.name %>
       <br/>
-      Email: <a href="mailto:<%=u.email%>"><%=u.email%></a>
+      Email: <a href="mailto:<%= u.email %>"><%= u.email %></a>
       <br/>
-      Age: <%=u.age%>
+      Age: <%= u.age %>
       <br/>
     </li>
   <% end %>

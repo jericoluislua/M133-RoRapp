@@ -1,0 +1,1 @@
+When creating a model it should be the word but in singular
