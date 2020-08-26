@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   get 'myswitzerland', to: 'myswitzerland#show'
   get 'myfriends', to: 'myfriends#show'
   get 'helloworld', to: 'helloworld#index'
-  root 'pages#home'
+  root 'pages#home', as: 'home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
