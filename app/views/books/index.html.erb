@@ -13,14 +13,14 @@
       <tbody>
       <% @books.each do |b| %>
         <tr>
-          <td><%= link_to b.title, show_book_path(b.id) %></td>
-          <td><%= link_to "Edit", edit_book_path(b.id) %></td>
+          <td><%= link_to b.title, show_book_path(b) %></td>
+          <td><%= link_to "Edit", edit_book_path(b) %></td>
           <td><%= link_to "Delete", delete_book_path(b.id), method: :delete, data: {confirm: "Are you sure?"} %></td>
         </tr>
       <% end %>
       </tbody>
     </table>
   <% end %>
-  <%= link_to "Create a new book", create_new_book_path %>
-  <%=link_to "Go baack home", home_path %>
+  <%= link_to "Create a new book", new_book_path %>
+  <%= link_to "Go back home", home_path %>
 </div>

@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  get 'subject/show'
-  get 'book/destroy/:id', to:'books#destroy', as: 'delete_book'
+  get 'subject/:id', to:'subjects#show', as:'show_subject'
+  delete 'book/destroy/:id', to:'books#destroy', as: 'delete_book'
   get 'book/edit/:id', to: 'books#edit', as: 'edit_book'
-  get 'books/new', to: 'books#new', as: 'create_new_book'
+  #new_book = view
+  get 'books/new', to: 'books#new', as: 'new_book'
+  #create_new_book = controller
+  post 'books/create', to: 'books#create', as: 'create_new_book'
   get 'book/:id', to:'books#show', as: 'show_book'
   get 'books', to: 'books#index'
   get 'users/show'
