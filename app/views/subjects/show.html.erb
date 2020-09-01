@@ -7,8 +7,13 @@
     </thead>
     <tbody>
     <h3>books with this subject</h3>
-    <% if @subject.id != @book.subject_id %>
-      No books
+    <% @books.each do |b| %>
+      <% if @subject.id == b.subject_id %>
+        <tr>
+          <td><%= link_to b.title, show_book_path(b.id)%></td>
+        </tr>
+      <% end %>
+
     <% end %>
     </tbody>
   </table>

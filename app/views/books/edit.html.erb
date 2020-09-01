@@ -1,6 +1,6 @@
 <div class="container">
-  <h2>Create a new book</h2>
-  <%= form_with model: @book, url: create_new_book_path do |f| %>
+  <h2>Edit a book</h2>
+  <%= form_with model: @book, url: update_book_path(@book.id) do |f| %>
     <div class="form-group row">
       <%= label_tag(:title, "Title:", class: "col-sm-2 col-form-label") %>
       <div class="col-sm-10">

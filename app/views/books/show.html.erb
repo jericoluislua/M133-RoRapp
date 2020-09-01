@@ -8,7 +8,7 @@
     <tr>
       <td><h4>Subject:</h4></td>
       <!---we need the "subject name because subject was a foreign key id in book"-->
-      <td><h5><%=link_to @book.subject.name, show_subject_path%></h5></td>
+      <td><h5><%=link_to @book.subject.name, show_subject_path(@book.subject_id)%></h5></td>
     </tr>
     <tr>
       <td><h4>Created Date:</h4></td>

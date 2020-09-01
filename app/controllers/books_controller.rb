@@ -7,11 +7,14 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
   end
 
+  #view
   def new
     @book = Book.new
     @subjects = Subject.all
+    @book.valid?
   end
 
+  #action
   def create
     @book = Book.new(book_params)
 
@@ -19,7 +22,7 @@ class BooksController < ApplicationController
       redirect_to action: "index"
     else
       @subjects = Subject.all
-      render action: "new"
+      #render action: "new"
     end
   end
 
@@ -27,11 +30,13 @@ class BooksController < ApplicationController
     params.require(:book).permit(:title, :price, :subject_id, :description)
   end
 
+  #view
   def edit
     @book = Book.find(params[:id])
     @subjects = Subject.all
   end
 
+  #action
   def update
     @book = Book.find(params[:id])
     if @book.update_attributes(book_params)

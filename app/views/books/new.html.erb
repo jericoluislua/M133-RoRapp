@@ -1,5 +1,12 @@
 <div class="container">
   <h2>Create a new book</h2>
+  <% if @book.errors.any? %>
+    <ul>
+      <% @book.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        </ul>
+      <% end %>
+  <% end %>
   <%= form_with model: @book, url: create_new_book_path do |f| %>
     <div class="form-group row">
       <%= label_tag(:title, "Title:", class: "col-sm-2 col-form-label") %>
@@ -25,8 +32,8 @@
         <%= f.text_area :description, class: "form-control" %>
       </div>
     </div>
-    <%= submit_tag "Create book", class:"btn btn-success"%>
-    <%= link_to "Cancel", books_path, class:"btn btn-danger" %>
-<% end %>
+    <%= submit_tag "Create book", class: "btn btn-success" %>
+    <%= link_to "Cancel", books_path, class: "btn btn-danger" %>
+  <% end %>
   <br/>
 </div>
