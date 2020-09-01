@@ -1,155 +1,129 @@
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Jerico Lua</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main role="main">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="first-slide" src="/assets/slider1.jpg" alt="First slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Welcome! I am a rails programmer</h1>
-            <br>
-            <button class="btn btn-primary">Find More</button>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="second-slide" src="/assets/placeholder.png" alt="Second slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Welcome! I am a rails programmer</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-              metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="third-slide" src="/assets/placeholder.png" alt="Third slide">
-        <div class="container">
-          <div class="carousel-caption text-right">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-              metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-          </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="first-slide" src="/assets/slider1.jpg" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Welcome! I am a rails programmer</h1>
+          <br>
+          <button class="btn btn-primary">Find More</button>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <div class="carousel-item">
+      <img class="second-slide" src="/assets/placeholder.png" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Welcome! I am a rails programmer</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+            metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="third-slide" src="/assets/placeholder.png" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption text-right">
+          <h1>One more for good measure.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+            metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="/assets/1_140.jpg" alt="Generic placeholder image" width="140" height="140">
+      <h2>My Switzerland</h2>
+      <p>Places, travel, cities, landscape, chocolate</p>
+      <p><a class="btn btn-secondary" href="/myswitzerland" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="/assets/2_140.jpg" alt="Generic placeholder image" width="140" height="140">
+      <h2>My friends</h2>
+      <p>People, friends, family</p>
+      <p><a class="btn btn-secondary" href="/myfriends" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="rounded-circle" src="/assets/3_140.jpg" alt="Generic placeholder image" width="140" height="140">
+      <h2>My CsBe</h2>
+      <p>What you learn is what you earn.</p>
+      <p><a class="btn btn-secondary" href="/mycsbe" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Web Design is Responsive Design.
+        <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served
+        on. Flexible grids then size correctly to fit the screen.</p>
+    </div>
+    <div class="col-md-5">
+      <img class="rounded-circle" src="/assets/1_512.jpg" alt="Generic placeholder image">
+    </div>
   </div>
 
+  <hr class="featurette-divider">
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="/assets/1_140.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2>My Switzerland</h2>
-        <p>Places, travel, cities, landscape, chocolate</p>
-        <p><a class="btn btn-secondary" href="/myswitzerland" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="/assets/2_140.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2>My friends</h2>
-        <p>People, friends, family</p>
-        <p><a class="btn btn-secondary" href="/myfriends" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="rounded-circle" src="/assets/3_140.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2>My CsBe</h2>
-        <p>What you learn is what you earn.</p>
-        <p><a class="btn btn-secondary" href="/mycsbe" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Web Design is Responsive Design.
-          <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served
-          on. Flexible grids then size correctly to fit the screen.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="rounded-circle" src="/assets/1_512.jpg" alt="Generic placeholder image">
-      </div>
+  <div class="row featurette">
+    <div class="col-md-6 order-md-2">
+      <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
+      <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and
+        responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-6 order-md-2">
-        <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
-        <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and
-          responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
-      </div>
-      <div class="col-md-6 order-md-1">
-        <img class="rounded-circle" src="/assets/2_512.jpg" alt="Generic placeholder image">
-      </div>
+    <div class="col-md-6 order-md-1">
+      <img class="rounded-circle" src="/assets/2_512.jpg" alt="Generic placeholder image">
     </div>
+  </div>
 
-    <hr class="featurette-divider">
+  <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
-        <p class="lead">A big design trend for 2012 is "flat" design. Gone are the days of excessive gradients and
-          shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist
-          trend.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="rounded-circle" src="/assets/3_512.jpg" alt="Generic placeholder image">
-      </div>
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+      <p class="lead">A big design trend for 2012 is "flat" design. Gone are the days of excessive gradients and
+        shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist
+        trend.</p>
     </div>
+    <div class="col-md-5">
+      <img class="rounded-circle" src="/assets/3_512.jpg" alt="Generic placeholder image">
+    </div>
+  </div>
 
-    <hr class="featurette-divider">
+  <hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
+  <!-- /END THE FEATURETTES -->
 
-  </div><!-- /.container -->
+</div><!-- /.container -->
 
-
-</main>
