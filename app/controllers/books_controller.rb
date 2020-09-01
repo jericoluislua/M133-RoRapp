@@ -11,18 +11,16 @@ class BooksController < ApplicationController
   def new
     @book = Book.new
     @subjects = Subject.all
-    @book.valid?
   end
 
   #action
   def create
     @book = Book.new(book_params)
-
-    if @book.save
+    if @book.valid?
+      @book.save
       redirect_to action: "index"
     else
-      @subjects = Subject.all
-      #render action: "new"
+      render action: "new"
     end
   end
 
