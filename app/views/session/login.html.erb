@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Login</h1>
+  <div class="card col-5">
+    <h2 class="mx-auto">Login</h2>
+    <%= form_with model: @user, url: create_new_book_path do |f| %>
+      <%# if @user.errors.any? %>
+      <!--        <ul>-->
+      <%# @user.errors.full_messages.each do |msg| %>
+      <!--            <li><%#= msg %></li>-->
+      <!--            </ul>-->
+      <%# end %>
+      <%# end %>
+      <div class="form-group col-9 mx-auto">
+        <%= label_tag(:username, "Username:", class: "col-form-label") %>
+        <%= f.text_field :username, class: "form-control" %>
+      </div>
+      <div class="form-group col-9 mx-auto">
+        <%= label_tag(:pass, "Password:", class: "col-form-label") %>
+        <%= f.text_field :pass, class: "form-control" %>
+      </div>
+      <%= submit_tag "Create book", class: "btn btn-success mx-auto"%>
+  <% end %>
+  </div>
+</div>

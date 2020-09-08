@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  get 'login', to: 'session#login', as: 'session_login_form'
+  post 'login', to: 'session#login', as: 'login_method'
+  get 'welcome', to: 'session#welcome', as: 'session_logged_in'
+
   get 'subject/:id', to: 'subjects#show', as: 'show_subject'
   delete 'book/destroy/:id', to: 'books#destroy', as: 'delete_book'
 
