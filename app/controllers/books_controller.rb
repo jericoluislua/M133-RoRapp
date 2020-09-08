@@ -16,12 +16,6 @@ class BooksController < ApplicationController
   #action
   def create
     @book = Book.new(book_params)
-    if @book.valid?
-      @book.save
-      redirect_to action: "index"
-    else
-      render action: "new"
-    end
   end
 
   def book_params

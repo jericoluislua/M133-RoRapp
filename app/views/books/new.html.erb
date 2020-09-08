@@ -5,8 +5,8 @@
       <ul>
         <% @book.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
-          </ul>
         <% end %>
+      </ul>
     <% end %>
 
     <div class="form-group row">
@@ -33,8 +33,7 @@
         <%= f.text_area :description, class: "form-control" %>
       </div>
     </div>
-    <!--%=@book.valid? %-->
-    <%= submit_tag "Create book", class: "btn btn-success"%>
+    <%= submit_tag "Create book", class: "btn btn-success" %>
 
     <%= link_to "Cancel", books_path, class: "btn btn-danger" %>
   <% end %>
