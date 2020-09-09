@@ -1,11 +1,9 @@
 <div class="container">
   <h2>Create a new book</h2>
   <%= form_with model: @book, url: create_new_book_path do |f| %>
-
     <% if flash[:alert] %>
       <div class='alert alert-danger'><%= flash[:alert] %></div>
     <% end %>
-
     <div class="form-group row">
       <%= label_tag(:title, "Title:", class: "col-sm-2 col-form-label") %>
       <div class="col-sm-10">
