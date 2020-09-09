@@ -16,6 +16,14 @@ class BooksController < ApplicationController
   #action
   def create
     @book = Book.new(book_params)
+    if @book.update(book_params)
+      flash[:notice] = "Successfully uploaded Book"
+      redirect_to action: "index"
+    else
+      flash[:alert] = @book.errors.full_messages.join(', ')
+
+      redirect_to action: "new"
+    end
   end
 
   def book_params
@@ -32,6 +40,7 @@ class BooksController < ApplicationController
   def update
     @book = Book.find(params[:id])
     if @book.update_attributes(book_params)
+      flash[:notice] = "success"
       redirect_to action: "index"
     else
       @subjects = Subject.all
