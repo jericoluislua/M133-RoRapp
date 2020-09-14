@@ -20,7 +20,7 @@ class BooksController < ApplicationController
       flash[:notice] = "Successfully uploaded Book"
       redirect_to action: "index"
     else
-      flash[:alert] = @book.errors.full_messages
+      flash[:error] = @book.errors.full_messages
 
       redirect_to action: "new"
     end
